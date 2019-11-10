@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= name %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>목록 추가하기</h1>
+<hr>
+
+<form action="/" method="POST">
+    <table>
+        <tr>
+            <td><input type="text" name="inputTitle" placeholder="제목을 입력하세요."></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="inputWriter" placeholder="작성자를 입력하세요."></td>
+        </tr>
+    </table>
+    <input type="submit" value="전송하기">
+</form>
+</body>
 </html>
